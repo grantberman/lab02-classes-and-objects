@@ -1,4 +1,4 @@
-//
+ //
 //  main.swift
 //  prog2.1
 //
@@ -12,26 +12,62 @@ var frac: Fraction
 
     frac = Fraction.init()
 
-print ( " frac = \(frac.num)/\(frac.den)")
+ print("decimal value of u=\(frac.decimal)")
+ 
 
-frac.num = 5
-frac.den = 8
+ var frac2: Fraction = Fraction(num: -5)
 
-print ( " frac = \(frac.num)/\(frac.den)")
+ print("frac2=\(frac2.description)")
+ print("decimal value of x=\(frac2.decimal)")
 
-var frac2: Fraction = Fraction()
+var frac3 : Fraction = Fraction.init( num: -7 , den : 9 )
 
-frac2.num = 6
-frac2.den =  10
+ print("frac3=\(frac3.description)")
+ print("decimal value of v=\(frac3.decimal)")
+ 
+ var frac4 : Fraction = Fraction.init(num: 2, den : 3)
 
-print ( " frac2 = \(frac2.num)/\(frac2.den)")
+ print("frac4=\(frac4.description)")
+ print("decimal value of v=\(frac4.decimal)")
+ 
+ var testFrac : Fraction
+ 
+testFrac = frac4 + frac3
+ print("(" + frac4.description + ")+(" + frac3.description + ")=" + testFrac.description)
+ 
+testFrac = frac4 - frac3
+ print("(" + frac4.description + ")-(" + frac3.description + ")=" + testFrac.description)
+ 
+ testFrac = frac4 * frac3
+ print("(" + frac4.description + ")*(" + frac3.description + ")=" + testFrac.description)
+ 
+testFrac = frac4 / frac3
+ print("(" + frac4.description + ")/(" + frac4.description + ")=" + testFrac.description)
 
-var frac3 : Fraction = Fraction.init( num: -12 , den : 1 )
 
-print ( " frac3 = \(frac3.num)/\(frac3.den)")
+ testFrac = frac4.add(3)
+ print("(" + frac4.description + ")+3=" + testFrac.description)
+ 
+ let z: Int = 2
+ testFrac = frac4.divide(z)
+ print("(" + frac4.description + ")/\(z)=" + testFrac.description)
 
-var frac4 : Fraction = Fraction.init(num: -5)
+ 
+ 
+ func +(f1: Fraction, f2: Fraction) -> Fraction {
+    return f1.add(f2)
+ }
+ 
+ func -(f1: Fraction, f2: Fraction) -> Fraction {
+    return f1.subtract(f2)
+ }
+ 
 
-print ( " frac4 = \(frac4.num)/\(frac4.den)")
+ func *(f1: Fraction, f2: Fraction) -> Fraction {
+    return f1.multiply(f2)
+ }
 
-print ("frac4 = \(frac4.decimal)")
+ 
+ func /(f1: Fraction, f2: Fraction) -> Fraction {
+    return f1.divide(f2)
+ }
