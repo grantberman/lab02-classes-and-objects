@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Fraction {
+class Fraction : CustomStringConvertible{
     
     var num: Int
     var den: Int
@@ -23,7 +23,7 @@ class Fraction {
     }
     
     var description: String {
-        return "\(self.num)/ \(self.den)"
+        return "\(self.num)/\(self.den)"
     }
     
     //INITAILIZERS

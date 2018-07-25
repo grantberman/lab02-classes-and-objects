@@ -27,6 +27,7 @@
 		3DC97E8D20FEC1AE00EE98AE /* prog2.1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = prog2.1; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC97E9020FEC1AE00EE98AE /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3DC97E9720FEC20500EE98AE /* Fraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fraction.swift; sourceTree = "<group>"; };
+		939978C221075D9400199EB6 /* prog2.1.xcodeproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = prog2.1.xcodeproj; path = "../../../../lab02new/lab02/lab02-classes-and-objects/prog2.1/prog2.1.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 			children = (
 				3DC97E9020FEC1AE00EE98AE /* main.swift */,
 				3DC97E9720FEC20500EE98AE /* Fraction.swift */,
+				939978C221075D9400199EB6 /* prog2.1.xcodeproj */,
 			);
 			path = prog2.1;
 			sourceTree = "<group>";
